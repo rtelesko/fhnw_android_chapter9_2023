@@ -1,0 +1,6 @@
+include ':Workout'
+include ':LotteryFragmentTwo'
+include ':LotteryFragmentThree'
+include ':LotteryFragmentOne'
+include ':app'
+rootProject.name = "Chapter9"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.lotteryfragmentone.MainActivity">
+
+    <!-- Static fragment: A static Fragment is included in an XML file using a fragment tag within another XML layout.-->
+
+    <fragment
+        android:id="@+id/frFragment1"
+        android:name="com.example.lotteryfragmentone.Fragment1"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/frFragment2"
+        android:name="com.example.lotteryfragmentone.Fragment2"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

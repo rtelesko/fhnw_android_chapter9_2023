@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lottery FragmentThree</string>
+
+    <string-array name="players">
+        <item>John</item>
+        <item>Martin</item>
+        <item>Jack</item>
+        <item>Donald</item>
+        <item>George</item>
+        <item>Robert</item>
+        <item>Tim</item>
+        <item>Adam</item>
+        <item>David</item>
+    </string-array>
+
+</resources>
