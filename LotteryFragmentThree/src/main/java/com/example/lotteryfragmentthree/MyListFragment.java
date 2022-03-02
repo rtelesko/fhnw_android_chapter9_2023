@@ -13,8 +13,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
-import java.util.Objects;
-
 // See for ListFragment: https://developer.android.com/reference/androidx/fragment/app/ListFragment
 public class MyListFragment extends ListFragment implements OnItemClickListener {
 
@@ -29,7 +27,7 @@ public class MyListFragment extends ListFragment implements OnItemClickListener 
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // Creates a new ArrayAdapter from external resources
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()),
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(requireActivity(),
                 // Layout can be opened and changed directly with CTRL + left mouse click ==> e.g. textStyle to "italic"
                 R.array.players, R.layout.my_list_layout);
         setListAdapter(adapter);
@@ -38,7 +36,7 @@ public class MyListFragment extends ListFragment implements OnItemClickListener 
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(getActivity(), "Item at position " + position + ": " + getListView().getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+        Toast.makeText(getActivity(), "Item at position " + position + ": " + getListView().getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show();
 
     }
 }

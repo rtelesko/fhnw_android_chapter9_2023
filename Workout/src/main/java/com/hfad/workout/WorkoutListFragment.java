@@ -3,8 +3,6 @@ package com.hfad.workout;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDialogFragment;
 import androidx.fragment.app.ListFragment;
 
 import android.view.LayoutInflater;
